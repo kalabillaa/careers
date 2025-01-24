@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">JobFinder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('home')}}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{{ url_for('about')}}">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('jobs')}}">Jobs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h1 class="display-4 mb-4">About Us</h1>
+                <p class="lead text-muted">
+                    Welcome to <strong>JobFinder</strong>, your ultimate destination for finding the perfect job or hiring top talent. We are dedicated to bridging the gap between job seekers and employers by providing a user-friendly platform that makes the hiring process seamless.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="{{ url_for('static',filename='image.png')}}" class="img-fluid rounded" alt="Our Mission">
+            </div>
+            <div class="col-md-6">
+                <h2 class="mb-4">Our Mission</h2>
+                <p>
+                    At JobFinder, our mission is to empower individuals by connecting them to opportunities that align with their skills, interests, and career aspirations. We strive to help businesses succeed by finding the right talent for their needs.
+                </p>
+                <p>
+                    Whether you're a job seeker or an employer, we're here to simplify the process and help you achieve your goals.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us -->
+    <div class="container py-5 bg-light">
+        <div class="text-center mb-5">
+            <h2>Why Choose Us?</h2>
+            <p class="text-muted">Here’s what sets us apart:</p>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <i class="bi bi-people-fill display-4 text-success"></i>
+                </div>
+                <h5>Wide Network</h5>
+                <p>We connect you to a diverse range of job opportunities and top-tier talent.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <i class="bi bi-speedometer display-4 text-success"></i>
+                </div>
+                <h5>Fast and Easy</h5>
+                <p>Our platform is designed to make job hunting and recruitment quick and hassle-free.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <i class="bi bi-shield-lock display-4 text-success"></i>
+                </div>
+                <h5>Secure</h5>
+                <p>Your data is safe with us. We prioritize privacy and security for all users.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-success text-white text-center py-3">
+        <p>&copy; 2025 JobFinder. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
